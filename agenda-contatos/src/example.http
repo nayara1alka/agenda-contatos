@@ -1,0 +1,20 @@
+###
+GET http://localhost:3000/contatos
+
+###
+POST http://localhost:3000/contatos HTTP/1.1
+content-type: application/json
+
+{
+    "id":1,
+    "nome": "sample",
+    "sobrenome": "Wed, 21 Oct 2015 18:27:50 GMT",
+    "telefone": "(00)00000-0000",
+    "dataNascimento": "10/10/2000",
+    "endereco": "Flores 12",
+    "email": "usuario@email.com"
+}
+}
+
+###
+DELETE http://localhost:3000/contatos/2

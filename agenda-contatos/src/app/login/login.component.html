@@ -1,0 +1,18 @@
+<div class="grupo-login">
+<form >
+    <div class="">
+        <label for="nome" class=""></label>
+        <div class="">
+            <input autocomplete="off"
+            [(ngModel)]="usuario.nome" name="nome" type="text" class="form-control" id="nome" placeholder="Usuário">
+        </div>
+    </div>
+    <div class="">
+        <label for="senha" class=""></label>
+        <div class="">
+            <input [(ngModel)]="usuario.senha" name="password"  type="password" class="form-control" id="senha" placeholder="Senha">
+        </div>
+    </div>
+    <button type="submit" class="btn" (click)="fazerLogin()" >Enviar</button>
+</form>  
+</div>

@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+body{
+    background-color: #EEFCFA;
+}
+h2{
+    font-size: 16px;
+    font-weight: bold;
+}
+.container-titulo {
+    max-width: 630px ;
+    margin: auto;
+}
+h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 5rem;
+    text-align: center;
+    margin: 50px 0;
+    color: #03110F;
+    white-space:nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: type 1s steps(60,end); 
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+/* MEDIA QUERIES */
+@media screen and(max-width:800px){
+    .container-titulo {
+        max-width: 500px ;
+    }
+    h1{
+    font-size: 4rem;
+    white-space:pre-wrap;
+    
+    }
+}
+@media screen and(max-width:600px){
+    .container-titulo {
+        max-width: 250px ;
+    }
+}
+  

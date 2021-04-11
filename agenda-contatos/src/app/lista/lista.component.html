@@ -1,0 +1,41 @@
+<div class="container-titulo ">
+  <h1>Agenda de Contatos</h1>
+</div>
+<section class="grupo-card-1">
+  <div class="grupo-card" *ngIf="lista$ | async as lista; else loading ">
+    <div *ngFor="let item of lista" class="card-s">
+      <div (click)="remover(item)">
+        <div class="agenda">
+          <img src="../../assets/agenda.svg" alt="Icone de Agenda" />
+        </div>
+        <div>
+          <h2>Nome:</h2> <span>{{ item.nome }}</span>
+        </div>
+        <div>
+          <h2>Sobrenome:</h2> <span>{{ item.sobrenome }}</span>
+        </div>
+        <div>
+          <h2>Data de Nascimento:</h2> <span>{{ item.dataNascimento }}</span>
+        </div>
+        <div>
+          <h2>Telefone:</h2> <span>{{ item.telefone }}</span>
+        </div>
+        <div>
+          <h2>Endereço:</h2> <span>{{ item.endereco }}</span>
+        </div>
+        <div>
+          <h2>E-mail:</h2> <span>{{ item.email }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<ng-template #loading>
+  <div class="load">
+    <button class="btn" type="button">
+      <span class="spinner-border " style="width: 1.5rem; height: 1.5rem;" role="status" aria-hidden="true"></span>
+      <span class="visually-hidden" style="font-size: 20px;">Carregando lista</span>
+    </button>
+  </div>
+</ng-template>

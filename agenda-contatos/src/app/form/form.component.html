@@ -1,0 +1,70 @@
+<div class="container-titulo ">
+    <h1>Agenda de Contatos</h1>
+</div>
+<h2 class="titulo-2">Cadastrar</h2>
+<div class="formulario">
+    <form class="row needs-validation" [formGroup]="form" novalidate>
+        <div class="col-md-6 input-itens">
+            <label for="name" class="form-label">Nome</label>
+            <input autocomplete="off"
+            type="text" (input)="onInput()" class="form-control" id="name" formControlName="nome"
+                [ngClass]="{'is-invalid': submitted && hasError('nome') || verificarCampo('nome')}">
+            <div class="invalid-tooltip">
+                Campo Obrigatório.
+            </div>
+        </div>
+        <div class="col-md-6 input-itens">
+            <label for="sobrenome" class="form-label">Sobrenome</label>
+            <input autocomplete="off"
+            type="text" (input)="onInput()" class="form-control" id="sobrenome" formControlName="sobrenome"
+                [ngClass]="{'is-invalid': submitted && hasError('sobrenome') || verificarCampo('sobrenome')}">
+            <div class="invalid-tooltip">
+                Campo Obrigatório.
+            </div>
+        </div>
+        <div class="col-md-6 input-itens">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input autocomplete="off"
+            type="tel" placeholder="(99)99999-9999" (input)="onInput()" class="form-control" id="telefone"
+                formControlName="telefone"
+                [ngClass]="{'is-invalid': submitted && hasError('telefone') || verificarCampo('telefone') }">
+            <div class="invalid-tooltip">
+                Campo Obrigatório.
+            </div>
+        </div>
+        <div class="col-md-6 input-itens">
+            <label for="dtNascimento" class="form-label">Data de Nascimento</label>
+            <input autocomplete="off"
+            type="date" (input)="onInput()" class="form-control" id="dtNascimento"
+                formControlName="dataNascimento"
+                [ngClass]="{'is-invalid': submitted && hasError('dataNascimento') || verificarCampo('dataNascimento') }">
+            <div class="invalid-tooltip">
+                Campo Obrigatório.
+            </div>
+        </div>
+        <div class="col-12 input-itens">
+            <label for="endereco" class="form-label">Endereço</label>
+            <input autocomplete="off"
+            type="text" placeholder="Rua João Batista, 256" (input)="onInput()" class="form-control"
+                id="endereco" formControlName="endereco"
+                [ngClass]="{'is-invalid': submitted && hasError('endereco') || verificarCampo('endereco')}">
+            <div class="invalid-tooltip">
+                Campo Obrigatório.
+            </div>
+        </div>
+        <div class="col-12 input-itens">
+            <label for="email" class="form-label">E-mail</label>
+            <input autocomplete="off"
+            type="email" placeholder="usuario@email.com" (input)="onInput()" class="form-control" id="email"
+                formControlName="email"
+                [ngClass]="{'is-invalid': submitted && hasError('email') || verificarCampo('email') }">
+            <div class="invalid-tooltip">
+                Campo Obrigatório.
+            </div>
+        </div>
+
+        <div class="btn-submit">
+            <button type="submit" class="btn" (click)="onSubmit()">ENVIAR</button>
+        </div>
+    </form>
+</div>

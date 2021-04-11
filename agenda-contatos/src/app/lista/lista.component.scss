@@ -1,0 +1,62 @@
+.grupo-card-1{
+    margin: 130px 0 60px 0;
+}
+.grupo-card > *{
+    margin: 12px 0 0 12px;
+}
+.grupo-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -12px 0 0 -12px;
+    width: calc(100% + 12px);
+}
+.card-s{
+    width: 400px;
+    padding: 15px;
+    background-color: #105249;
+    border-radius: 5px;
+    color: white;
+    box-shadow: -5px 5px 30px rgba(3, 17, 15, 0.7);
+    border: 7px double #dbe7e5;
+}
+.card-s:hover{
+    box-shadow: -5px 5px 60px rgba(3, 17, 15, 0.7);
+}
+h2{
+    color: #dbe7e5;
+}
+.card-s h2{ 
+    display: inline; 
+} 
+.btn{
+    background-color: #03110F;
+    font-weight: bold;
+    color: white;
+    padding: 10px 30px;
+}
+
+.load{
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.agenda{
+    margin-bottom: 15px;
+}
+.agenda img{
+  width: 60px;
+}
+/* MEDIA QUERIES */
+@media screen and(max-width:1000px) {
+    .grupo-card{
+        justify-content: center;
+    }
+    
+}
+@media screen and(max-width:550px){
+    .grupo-card-1{
+        margin: 90px 0 60px 0;
+    }
+}

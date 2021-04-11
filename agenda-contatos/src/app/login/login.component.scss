@@ -1,0 +1,21 @@
+.grupo-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+form{
+    border-radius: 5px;
+    padding: 40px 60px;
+    background-color: #105249;
+    box-shadow: -5px 5px 20px rgba(3, 17, 15, 0.7);
+}
+.btn{
+    background-color: #03110F;
+    font-weight: bold;
+    color: white;
+    padding: 5px 20px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}

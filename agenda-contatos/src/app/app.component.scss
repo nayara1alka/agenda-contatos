@@ -1,0 +1,21 @@
+.menu{
+    background-color: #105249;
+    border-radius: 5px;
+    box-shadow: -5px 5px 20px rgba(3, 17, 15, 0.7);
+    border: 6px double white;
+    margin-top: 5px;
+}
+.nav{
+    padding: 20px;
+}
+.nav-pills>li>a.active,
+.nav-pills>li.active>a:hover, 
+.nav-pills>li.active>a:focus { 
+    background-color: white;
+    color: #03110F;
+}
+.nav>li>a { 
+    color: white;
+    font-weight: bold;
+  }
+  
